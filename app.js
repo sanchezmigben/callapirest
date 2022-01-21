@@ -20,6 +20,7 @@ async function fetchProducts() {
       .then((res) => res.json())
       .then((data) => {
         //console.log(data);
+        document.getElementById("loading").style.display = 'none';  
         const ul = document.getElementById('products');
         let products = data;
         //console.log(products);
